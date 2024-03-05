@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 # Define the URL for the SQLAlchemy database
-SQLALCHEMY_DATABASE_URL = 'sqlite:///todo.db'
+SQLALCHEMY_DATABASE_URL = 'sqlite:///./todos.db'
 
 # Create a new engine instance at the database URL
 # connect_args={'check_same_thread': False} is used to allow the 
@@ -21,4 +21,3 @@ SessionLocal = sessionmaker(autocommit=False,
 
 # Create a base class for declarative models
 Base = declarative_base()
-
