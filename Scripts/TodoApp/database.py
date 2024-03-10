@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
 # Define the URL for the SQLAlchemy database
-SQLALCHEMY_DATABASE_URL = 'sqlite:///./todos.db'
+SQLALCHEMY_DATABASE_URL = 'sqlite:///./todosapp.db'
 
 # Create a new engine instance at the database URL
 # connect_args={'check_same_thread': False} is used to allow the 
